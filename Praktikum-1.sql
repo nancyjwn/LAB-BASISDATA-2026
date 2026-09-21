@@ -46,25 +46,23 @@ CREATE TABLE resep_obat(
 		REFERENCES rekam_medis(id_rm)
 );
 
-ALTER TABLE pasien(
+ALTER TABLE pasien
 	ADD COLUMN gol_darah CHAR(2)
-);
-ALTER TABLE resep_obat(
+
+ALTER TABLE resep_obat
 	ALTER COLUMN nama_obat TYPE TEXT
-);
-ALTER TABLE poliklinik(
+
+ALTER TABLE poliklinik
 	DROP COLUMN gedung
-);
 
 DROP TABLE rekam_medis;
 DROP TABLE resep obat;
 
 -- soal tambahan
-ALTER TABLE poliklinik(
+ALTER TABLE poliklinik
 	ADD COLUMN lantai INT NOT NULL,
 	ADD COLUMN keterangan TEXT,
-	DROP COLUMN keterangan
-);
+	DROP COLUMN keterangan;
 
 
 
