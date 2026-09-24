@@ -21,7 +21,7 @@ Adnan ingin memastikan bahwa tata cara pengumpulan kode (commit) ke repositori i
 5. **Buat Cabang (Branch) Baru**: Masuk ke direktori repositori yang telah di-kloning. Lalu buat cabang sesuai nim masing-masing.
 
 ```bash
-cd Lab-BasisData-05-2026
+cd Lab-BasisData-2026
 git checkout -b H071251nnn # Sesuaikan dengan NIM masing-masing
 ```
 
